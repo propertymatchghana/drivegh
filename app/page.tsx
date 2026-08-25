@@ -109,10 +109,10 @@ export default function Home() {
         <div className="vehicleGrid">
           {vehicles.map((vehicle) => (
             <article className="vehicleCard" key={vehicle.name}>
-             <div
+  <div
   className="vehicleImage"
   style={{
-    backgroundImage: `url("${vehicle.image}")`,
+    backgroundImage: `url(${vehicle.image})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
   }}
