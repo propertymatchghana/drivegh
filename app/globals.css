@@ -1,0 +1,423 @@
+:root {
+  --ink: #111;
+  --muted: #686868;
+  --paper: #fff;
+  --soft: #f4f4f2;
+  --line: #ddd;
+  --accent: #b08a45;
+  --dark: #111;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav {
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  z-index: 50;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.logo span {
+  font-weight: 400;
+  color: var(--accent);
+}
+
+.nav nav {
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav nav a:hover,
+.textLink:hover {
+  color: var(--accent);
+}
+
+.navCta,
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 20px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.navCta,
+.primary {
+  background: var(--ink);
+  color: white;
+}
+
+.ghost {
+  border: 1px solid var(--ink);
+}
+
+.hero {
+  min-height: 680px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.2)),
+    linear-gradient(145deg, #444, #111);
+  color: white;
+}
+
+.heroOverlay {
+  width: 100%;
+  padding: 8% 6%;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  font-weight: 900;
+  color: var(--accent);
+  margin: 0 0 14px;
+}
+
+.hero .eyebrow {
+  color: #d6b36d;
+}
+
+.hero h1 {
+  font-size: clamp(55px, 7vw, 105px);
+  line-height: 0.92;
+  letter-spacing: -5px;
+  margin: 0 0 28px;
+}
+
+.hero h1 em {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+.heroText {
+  font-size: 19px;
+  color: #dedede;
+  max-width: 560px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.lightButton {
+  border: 1px solid white;
+  color: white;
+}
+
+.section {
+  padding: 100px 6%;
+}
+
+.sectionHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 40px;
+  margin-bottom: 45px;
+}
+
+.sectionHead > p {
+  max-width: 390px;
+  color: var(--muted);
+}
+
+.section h2 {
+  font-size: clamp(38px, 5vw, 65px);
+  line-height: 1;
+  letter-spacing: -3px;
+  margin: 0;
+}
+
+.vehicleGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.vehicleCard {
+  border: 1px solid var(--line);
+  background: white;
+  overflow: hidden;
+}
+
+.vehicleImage {
+  height: 310px;
+  background: linear-gradient(145deg, #555, #171717);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  position: relative;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.vehicleImage span {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: var(--accent);
+  color: white;
+  padding: 7px 12px;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.vehicleInfo {
+  padding: 25px;
+}
+
+.vehicleInfo h3 {
+  font-size: 22px;
+  margin: 0 0 8px;
+}
+
+.vehicleDetails {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.vehicleBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.vehicleBottom strong {
+  font-size: 18px;
+}
+
+.vehicleBottom a {
+  font-size: 13px;
+  font-weight: 900;
+  color: var(--accent);
+}
+
+.soft {
+  background: var(--soft);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  min-height: 290px;
+  border: 1px solid var(--line);
+}
+
+.number {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-top: 60px;
+}
+
+.card p {
+  color: var(--muted);
+}
+
+.card a {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%;
+}
+
+.split p {
+  font-size: 18px;
+  color: var(--muted);
+}
+
+.textLink {
+  color: var(--accent);
+  font-weight: 900;
+}
+
+.darkSection {
+  background: var(--dark);
+  color: white;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 10%;
+}
+
+.darkSection .eyebrow {
+  color: #d6b36d;
+}
+
+.reasonGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+}
+
+.reasonGrid b {
+  color: var(--accent);
+}
+
+.reasonGrid h3 {
+  margin-bottom: 5px;
+}
+
+.reasonGrid p {
+  margin-top: 0;
+  color: #aaa;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%;
+  background: #eee8de;
+}
+
+.contactBox {
+  background: white;
+  padding: 35px;
+}
+
+.contactBox p {
+  margin: 0 0 22px;
+}
+
+.contactBox strong {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--accent);
+}
+
+footer {
+  padding: 35px 6%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.floating {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  background: #188a50;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 13px;
+  box-shadow: 0 8px 30px #0003;
+  z-index: 100;
+}
+
+@media (max-width: 900px) {
+  .nav nav {
+    display: none;
+  }
+
+  .vehicleGrid,
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .split,
+  .darkSection,
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .sectionHead {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    padding: 0 5%;
+  }
+
+  .navCta {
+    display: none;
+  }
+
+  .section,
+  .heroOverlay {
+    padding: 70px 5%;
+  }
+
+  .hero {
+    min-height: 620px;
+  }
+
+  .hero h1 {
+    font-size: 55px;
+    letter-spacing: -3px;
+  }
+
+  .vehicleGrid,
+  .cards,
+  .reasonGrid {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    display: block;
+  }
+}
