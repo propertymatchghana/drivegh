@@ -92,9 +92,11 @@ a {
   position: relative;
   display: flex;
   align-items: center;
-  background:
+    background-image:
     linear-gradient(90deg, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.2)),
-    linear-gradient(145deg, #444, #111);
+    url("/hero-car.jpg");
+  background-size: cover;
+  background-position: center;
   color: white;
 }
 
