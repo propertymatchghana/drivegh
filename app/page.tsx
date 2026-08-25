@@ -4,18 +4,21 @@ const vehicles = [
     price: "GH₵ 1,250,000",
     details: "Automatic • Petrol • 12,000 km",
     tag: "Featured",
+    image: "/land-cruiser.jpg",
   },
   {
     name: "2023 Mercedes-Benz C300",
     price: "GH₵ 850,000",
     details: "Automatic • Petrol • 18,500 km",
     tag: "Premium",
+    image: "/mercedes-c300.jpg",
   },
   {
     name: "2022 Toyota Camry",
     price: "GH₵ 420,000",
     details: "Automatic • Petrol • 32,000 km",
     tag: "Popular",
+    image: "/toyota-camry.jpg",
   },
 ];
 
