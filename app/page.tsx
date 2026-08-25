@@ -109,16 +109,20 @@ export default function Home() {
         <div className="vehicleGrid">
           {vehicles.map((vehicle) => (
             <article className="vehicleCard" key={vehicle.name}>
-  <div
-  className="vehicleImage"
-  style={{
-    backgroundImage: `url(${vehicle.image})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  }}
->
-  <span>{vehicle.tag}</span>
-</div>
+              <div className="vehicleImage">
+                <img
+                  src={vehicle.image}
+                  alt={vehicle.name}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    display: "block",
+                  }}
+                />
+
+                <span>{vehicle.tag}</span>
+              </div>
 
               <div className="vehicleInfo">
                 <h3>{vehicle.name}</h3>
